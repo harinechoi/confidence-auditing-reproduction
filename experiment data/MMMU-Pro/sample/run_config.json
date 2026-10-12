@@ -1,0 +1,42 @@
+{
+  "models": {
+    "gpt-5.5": {
+      "provider": "openai",
+      "model": "gpt-5.5"
+    },
+    "gpt-5.4-mini": {
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    "gpt-5.4-nano": {
+      "provider": "openai",
+      "model": "gpt-5.4-nano"
+    },
+    "Claude_Sonnet_5": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5"
+    },
+    "Claude_Haiku_4.5": {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001"
+    },
+    "Qwen_Qwen3.5-35B-A3B": {
+      "provider": "huggingface",
+      "model": "Qwen/Qwen3.5-35B-A3B"
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "provider": "huggingface",
+      "model": "Qwen/Qwen3-VL-30B-A3B-Instruct:deepinfra"
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "provider": "huggingface",
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct:deepinfra"
+    }
+  },
+  "concurrency_per_model": 12,
+  "sample_manifest": "../data/manifest.json",
+  "images": "Original PNG with ordered labeled attachments. Oversize Anthropic/HF inputs use documented PNG derivatives; see data/transport_manifest.json",
+  "generation_prompt": "../prompt.txt",
+  "settings": "Exact request settings recorded for every raw response",
+  "reference": "../../MMLU_pro/run_benchmark.py"
+}

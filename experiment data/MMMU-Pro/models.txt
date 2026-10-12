@@ -1,0 +1,8 @@
+gpt-5.5
+gpt-5.4-mini
+gpt-5.4-nano
+Claude_Sonnet_5
+Claude_Haiku_4.5
+Qwen_Qwen3.5-35B-A3B
+Qwen_Qwen3-VL-30B-A3B-Instruct
+meta-llama_Llama-4-Scout-17B-16E-Instruct

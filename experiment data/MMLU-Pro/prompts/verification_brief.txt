@@ -1,0 +1,25 @@
+1. Please find the model output documents in the folder /selected_outputs/model names
+
+2. For these 8 models in this folder, please run a further experiment on LLM judges. That is, let LLMs to judge themselves. 8 juges and evaluate the performance of the models, and follow a template like such:
+
+Prompt like such, and for each question only provide the question, option and selected options as input, and output only correct or not by judge.
+
+"
+You are a fair and strict evaluator.
+
+Determine the correctness of answer to the multiple-choice question.
+
+{question}
+
+{options}
+
+Answer selected by model: .
+
+Determine if correct
+"
+
+use such steps to evaluate all other models, that means you will need to run all 8 models, and let them to evaluate (only there is a valid answer) by other 7 model's answers.
+
+Therefore, you will have 8 csvs and each with initial question columes, and 7 columes of other model name _ correctness after the implementation. Put them in the verifier_output folder.
+
+Start your run and make sure the designed prompt saves tokens, and won't do long reasoning. The access tokens etc are provided in this file.

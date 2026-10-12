@@ -1,0 +1,53 @@
+{
+  "gpt-5.5": {
+    "completed": 1000,
+    "expected": 1000,
+    "complete": true,
+    "missing_ids": []
+  },
+  "gpt-5.4-mini": {
+    "completed": 1000,
+    "expected": 1000,
+    "complete": true,
+    "missing_ids": []
+  },
+  "gpt-5.4-nano": {
+    "completed": 1000,
+    "expected": 1000,
+    "complete": true,
+    "missing_ids": []
+  },
+  "Claude_Sonnet_5": {
+    "completed": 998,
+    "expected": 1000,
+    "complete": false,
+    "missing_ids": [
+      "test_Biology_318",
+      "test_Agriculture_282"
+    ]
+  },
+  "Claude_Haiku_4.5": {
+    "completed": 1000,
+    "expected": 1000,
+    "complete": true,
+    "missing_ids": []
+  },
+  "Qwen_Qwen3.5-35B-A3B": {
+    "completed": 1000,
+    "expected": 1000,
+    "complete": true,
+    "missing_ids": []
+  },
+  "Qwen_Qwen3-VL-30B-A3B-Instruct": {
+    "completed": 1000,
+    "expected": 1000,
+    "complete": true,
+    "missing_ids": []
+  },
+  "meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+    "completed": 1000,
+    "expected": 1000,
+    "complete": true,
+    "missing_ids": []
+  }
+}

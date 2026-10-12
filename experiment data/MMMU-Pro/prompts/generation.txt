@@ -1,0 +1,12 @@
+Answer the following MMMU-Pro multiple-choice question. Think carefully and identify the single correct option.
+
+Return only valid JSON:
+
+{"Answer":"X","Reasoning":"Brief justification of no more than 30 words, ending with: the answer is (X)","Confidence":"Integer from 1 to 100 representing the estimated probability that the selected answer is correct"}
+
+Replace X with the correct option letter. Do not include markdown or any text outside the JSON.
+
+Question:
+{Question}
+
+Associated images follow, labeled to match <image N> in the question and options. Use all provided images.

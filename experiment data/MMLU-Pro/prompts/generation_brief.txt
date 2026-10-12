@@ -1,0 +1,7 @@
+Collect columes of csv, the columes are
+
+question id, question, options, selected options, reasoning, self_confidence, llm_confidence_vector
+
+Collect this for the first 8000QAs of MMLU-pro, USE MY given prompt.txt as prompt.
+
+https://github.com/TIGER-AI-Lab/MMLU-Pro

@@ -1,0 +1,392 @@
+{
+  "sample_size": 1000,
+  "models": {
+    "gpt-5.5": {
+      "completed_answers": 1000,
+      "missing_answers": 0,
+      "correct_answers": 597,
+      "accuracy_on_completed": 0.597
+    },
+    "gpt-5.4-mini": {
+      "completed_answers": 1000,
+      "missing_answers": 0,
+      "correct_answers": 402,
+      "accuracy_on_completed": 0.402
+    },
+    "gpt-5.4-nano": {
+      "completed_answers": 1000,
+      "missing_answers": 0,
+      "correct_answers": 272,
+      "accuracy_on_completed": 0.272
+    },
+    "Claude_Sonnet_5": {
+      "completed_answers": 998,
+      "missing_answers": 2,
+      "correct_answers": 634,
+      "accuracy_on_completed": 0.6352705410821643
+    },
+    "Claude_Haiku_4.5": {
+      "completed_answers": 1000,
+      "missing_answers": 0,
+      "correct_answers": 377,
+      "accuracy_on_completed": 0.377
+    },
+    "Qwen_Qwen3.5-35B-A3B": {
+      "completed_answers": 1000,
+      "missing_answers": 0,
+      "correct_answers": 524,
+      "accuracy_on_completed": 0.524
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed_answers": 1000,
+      "missing_answers": 0,
+      "correct_answers": 344,
+      "accuracy_on_completed": 0.344
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed_answers": 1000,
+      "missing_answers": 0,
+      "correct_answers": 349,
+      "accuracy_on_completed": 0.349
+    }
+  },
+  "pairs": {
+    "gpt-5.5__judged_by__gpt-5.4-mini": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 585,
+      "mean_correctness_probability": 82.527
+    },
+    "gpt-5.5__judged_by__gpt-5.4-nano": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 166,
+      "mean_correctness_probability": 57.35
+    },
+    "gpt-5.5__judged_by__Claude_Sonnet_5": {
+      "completed": 998,
+      "pending": 2,
+      "judged_correct": 720,
+      "mean_correctness_probability": 71.00300601202404
+    },
+    "gpt-5.5__judged_by__Claude_Haiku_4.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 543,
+      "mean_correctness_probability": 58.898
+    },
+    "gpt-5.5__judged_by__Qwen_Qwen3.5-35B-A3B": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 682,
+      "mean_correctness_probability": 81.97
+    },
+    "gpt-5.5__judged_by__Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 703,
+      "mean_correctness_probability": 74.635
+    },
+    "gpt-5.5__judged_by__meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 758,
+      "mean_correctness_probability": 76.885
+    },
+    "gpt-5.4-mini__judged_by__gpt-5.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 597,
+      "mean_correctness_probability": 94.506
+    },
+    "gpt-5.4-mini__judged_by__gpt-5.4-nano": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 198,
+      "mean_correctness_probability": 57.995
+    },
+    "gpt-5.4-mini__judged_by__Claude_Sonnet_5": {
+      "completed": 998,
+      "pending": 2,
+      "judged_correct": 623,
+      "mean_correctness_probability": 68.71142284569139
+    },
+    "gpt-5.4-mini__judged_by__Claude_Haiku_4.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 528,
+      "mean_correctness_probability": 57.917
+    },
+    "gpt-5.4-mini__judged_by__Qwen_Qwen3.5-35B-A3B": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 611,
+      "mean_correctness_probability": 78.765
+    },
+    "gpt-5.4-mini__judged_by__Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 691,
+      "mean_correctness_probability": 73.71
+    },
+    "gpt-5.4-mini__judged_by__meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 777,
+      "mean_correctness_probability": 78.46
+    },
+    "gpt-5.4-nano__judged_by__gpt-5.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 453,
+      "mean_correctness_probability": 94.937
+    },
+    "gpt-5.4-nano__judged_by__gpt-5.4-mini": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 494,
+      "mean_correctness_probability": 79.559
+    },
+    "gpt-5.4-nano__judged_by__Claude_Sonnet_5": {
+      "completed": 998,
+      "pending": 2,
+      "judged_correct": 492,
+      "mean_correctness_probability": 63.83266533066132
+    },
+    "gpt-5.4-nano__judged_by__Claude_Haiku_4.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 490,
+      "mean_correctness_probability": 55.122
+    },
+    "gpt-5.4-nano__judged_by__Qwen_Qwen3.5-35B-A3B": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 521,
+      "mean_correctness_probability": 75.085
+    },
+    "gpt-5.4-nano__judged_by__Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 654,
+      "mean_correctness_probability": 72.305
+    },
+    "gpt-5.4-nano__judged_by__meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 780,
+      "mean_correctness_probability": 78.515
+    },
+    "Claude_Sonnet_5__judged_by__gpt-5.5": {
+      "completed": 998,
+      "pending": 0,
+      "judged_correct": 698,
+      "mean_correctness_probability": 94.7685370741483
+    },
+    "Claude_Sonnet_5__judged_by__gpt-5.4-mini": {
+      "completed": 998,
+      "pending": 0,
+      "judged_correct": 568,
+      "mean_correctness_probability": 80.39879759519039
+    },
+    "Claude_Sonnet_5__judged_by__gpt-5.4-nano": {
+      "completed": 998,
+      "pending": 0,
+      "judged_correct": 172,
+      "mean_correctness_probability": 57.670340681362724
+    },
+    "Claude_Sonnet_5__judged_by__Claude_Haiku_4.5": {
+      "completed": 998,
+      "pending": 0,
+      "judged_correct": 560,
+      "mean_correctness_probability": 59.58416833667334
+    },
+    "Claude_Sonnet_5__judged_by__Qwen_Qwen3.5-35B-A3B": {
+      "completed": 998,
+      "pending": 0,
+      "judged_correct": 690,
+      "mean_correctness_probability": 81.53306613226452
+    },
+    "Claude_Sonnet_5__judged_by__Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed": 998,
+      "pending": 0,
+      "judged_correct": 695,
+      "mean_correctness_probability": 74.48196392785572
+    },
+    "Claude_Sonnet_5__judged_by__meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed": 998,
+      "pending": 0,
+      "judged_correct": 764,
+      "mean_correctness_probability": 77.61022044088176
+    },
+    "Claude_Haiku_4.5__judged_by__gpt-5.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 577,
+      "mean_correctness_probability": 94.457
+    },
+    "Claude_Haiku_4.5__judged_by__gpt-5.4-mini": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 575,
+      "mean_correctness_probability": 79.333
+    },
+    "Claude_Haiku_4.5__judged_by__gpt-5.4-nano": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 198,
+      "mean_correctness_probability": 59.593
+    },
+    "Claude_Haiku_4.5__judged_by__Claude_Sonnet_5": {
+      "completed": 998,
+      "pending": 2,
+      "judged_correct": 630,
+      "mean_correctness_probability": 68.95490981963928
+    },
+    "Claude_Haiku_4.5__judged_by__Qwen_Qwen3.5-35B-A3B": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 639,
+      "mean_correctness_probability": 80.005
+    },
+    "Claude_Haiku_4.5__judged_by__Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 761,
+      "mean_correctness_probability": 78.938
+    },
+    "Claude_Haiku_4.5__judged_by__meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 807,
+      "mean_correctness_probability": 81.435
+    },
+    "Qwen_Qwen3.5-35B-A3B__judged_by__gpt-5.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 680,
+      "mean_correctness_probability": 94.641
+    },
+    "Qwen_Qwen3.5-35B-A3B__judged_by__gpt-5.4-mini": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 587,
+      "mean_correctness_probability": 81.524
+    },
+    "Qwen_Qwen3.5-35B-A3B__judged_by__gpt-5.4-nano": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 190,
+      "mean_correctness_probability": 57.866
+    },
+    "Qwen_Qwen3.5-35B-A3B__judged_by__Claude_Sonnet_5": {
+      "completed": 998,
+      "pending": 2,
+      "judged_correct": 726,
+      "mean_correctness_probability": 72.125250501002
+    },
+    "Qwen_Qwen3.5-35B-A3B__judged_by__Claude_Haiku_4.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 574,
+      "mean_correctness_probability": 60.662
+    },
+    "Qwen_Qwen3.5-35B-A3B__judged_by__Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 745,
+      "mean_correctness_probability": 77.178
+    },
+    "Qwen_Qwen3.5-35B-A3B__judged_by__meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 796,
+      "mean_correctness_probability": 80.575
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct__judged_by__gpt-5.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 554,
+      "mean_correctness_probability": 94.566
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct__judged_by__gpt-5.4-mini": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 568,
+      "mean_correctness_probability": 81.797
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct__judged_by__gpt-5.4-nano": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 216,
+      "mean_correctness_probability": 60.82
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct__judged_by__Claude_Sonnet_5": {
+      "completed": 998,
+      "pending": 2,
+      "judged_correct": 619,
+      "mean_correctness_probability": 71.22645290581163
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct__judged_by__Claude_Haiku_4.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 586,
+      "mean_correctness_probability": 61.348
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct__judged_by__Qwen_Qwen3.5-35B-A3B": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 642,
+      "mean_correctness_probability": 81.455
+    },
+    "Qwen_Qwen3-VL-30B-A3B-Instruct__judged_by__meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 838,
+      "mean_correctness_probability": 84.255
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct__judged_by__gpt-5.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 537,
+      "mean_correctness_probability": 94.629
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct__judged_by__gpt-5.4-mini": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 562,
+      "mean_correctness_probability": 81.717
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct__judged_by__gpt-5.4-nano": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 207,
+      "mean_correctness_probability": 57.897
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct__judged_by__Claude_Sonnet_5": {
+      "completed": 997,
+      "pending": 3,
+      "judged_correct": 588,
+      "mean_correctness_probability": 69.35606820461385
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct__judged_by__Claude_Haiku_4.5": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 564,
+      "mean_correctness_probability": 60.05
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct__judged_by__Qwen_Qwen3.5-35B-A3B": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 611,
+      "mean_correctness_probability": 79.435
+    },
+    "meta-llama_Llama-4-Scout-17B-16E-Instruct__judged_by__Qwen_Qwen3-VL-30B-A3B-Instruct": {
+      "completed": 1000,
+      "pending": 0,
+      "judged_correct": 737,
+      "mean_correctness_probability": 77.161
+    }
+  },
+  "missing_answer_models": []
+}

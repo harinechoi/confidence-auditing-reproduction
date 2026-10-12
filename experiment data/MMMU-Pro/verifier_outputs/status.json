@@ -1,0 +1,62 @@
+{
+  "gpt-5.5": {
+    "pending_at_start": 0,
+    "completed_this_run": 0,
+    "failed_this_run": 0,
+    "fatal_error": null
+  },
+  "gpt-5.4-mini": {
+    "pending_at_start": 0,
+    "completed_this_run": 0,
+    "failed_this_run": 0,
+    "fatal_error": null
+  },
+  "gpt-5.4-nano": {
+    "pending_at_start": 0,
+    "completed_this_run": 0,
+    "failed_this_run": 0,
+    "fatal_error": null
+  },
+  "Claude_Sonnet_5": {
+    "pending_at_start": 0,
+    "completed_this_run": 0,
+    "failed_this_run": 0,
+    "fatal_error": null
+  },
+  "Claude_Haiku_4.5": {
+    "pending_at_start": 0,
+    "completed_this_run": 0,
+    "failed_this_run": 0,
+    "fatal_error": null
+  },
+  "Qwen_Qwen3.5-35B-A3B": {
+    "pending_at_start": 0,
+    "completed_this_run": 0,
+    "failed_this_run": 0,
+    "fatal_error": null
+  },
+  "Qwen_Qwen3-VL-30B-A3B-Thinking": {
+    "pending_at_start": 5998,
+    "completed_this_run": 0,
+    "failed_this_run": 1,
+    "fatal_error": "HTTP 400: {\"error\":{\"message\":\"The requested model 'Qwen/Qwen3-VL-30B-A3B-Thinking' is not supported by any provider you have enabled.\",\"type\":\"invalid_request_error\",\"param\":\"model\",\"code\":\"model_not_supported\"}}"
+  },
+  "meta-llama_Llama-3.2-11B-Vision-Instruct": {
+    "pending_at_start": 5998,
+    "completed_this_run": 0,
+    "failed_this_run": 1,
+    "fatal_error": "HTTP 400: {\"error\":{\"message\":\"The requested model 'meta-llama/Llama-3.2-11B-Vision-Instruct' is not supported by any provider you have enabled.\",\"type\":\"invalid_request_error\",\"param\":\"model\",\"code\":\"model_not_supported\"}}"
+  },
+  "Qwen_Qwen3-VL-30B-A3B-Instruct": {
+    "pending_at_start": 0,
+    "completed_this_run": 0,
+    "failed_this_run": 0,
+    "fatal_error": null
+  },
+  "meta-llama_Llama-4-Scout-17B-16E-Instruct": {
+    "pending_at_start": 117,
+    "completed_this_run": 117,
+    "failed_this_run": 0,
+    "fatal_error": null
+  }
+}

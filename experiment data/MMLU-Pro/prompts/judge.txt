@@ -1,0 +1,8 @@
+You are a fair and strict evaluator. Decide whether the selected answer is correct.
+
+Question: {question}
+Options:
+{options}
+Selected answer: {selected_answer}
+
+Return only JSON: {"correct":true_or_false,"correctness_probability":integer_0_to_100}

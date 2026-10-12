@@ -1,0 +1,64 @@
+MMLU-Pro / MMMU-Pro Model Cost Estimates
+Pricing and data checked: 2026-10-10
+
+Column definitions
+- Unit price: input / output, in USD per 1M tokens.
+- Answer cost/question = average input tokens × input price + average output tokens × output price.
+- Verifier cost/question: the average cost for this model to judge one answer from one model; it is not the combined cost of judging all seven other models.
+- Both token columns show total tokens (input + output).
+- Provider-reported output tokens include hidden reasoning/thinking tokens; R denotes the average number of reasoning/thinking tokens included in the output total.
+- Costs use standard, non-batch, non-cached API pricing and exclude failed retries, taxes, regional surcharges, and long-context surcharges.
+
+TABLE 1 — MMLU-Pro
+
+| Model | Unit price: input/output (USD/1M tokens) | Answer cost/question | Cost/question as verifier | Avg. answer tokens/question (I+O) | Avg. verifier tokens/question (I+O) |
+|---|---:|---:|---:|---:|---:|
+| gpt-5.5 | $5.00 / $30.00 | ~$0.00281950 | ~$0.00147550 | ~313.4 (263.3+50.1; R=0.0) | ~205.1 (187.1+18.0; R=0.0) |
+| gpt-5.4-mini | $0.75 / $4.50 | ~$0.00041168 | ~$0.00022133 | ~310.9 (263.3+47.6; R=0.0) | ~205.1 (187.1+18.0; R=0.0) |
+| gpt-5.4-nano | $0.20 / $1.25 | ~$0.00012004 | ~$0.00005992 | ~317.2 (263.3+53.9; R=0.0) | ~205.1 (187.1+18.0; R=0.0) |
+| Claude Sonnet 5 | $2.00 / $10.00 | ~$0.00150020 | ~$0.00069220 | ~424.9 (343.6+81.3; R=7.5) | ~276.9 (259.6+17.3; R=0.0) |
+| Claude Haiku 4.5 | $1.00 / $5.00 | ~$0.00054950 | ~$0.00026560 | ~300.7 (238.5+62.2; R=N/A) | ~201.6 (185.6+16.0; R=N/A) |
+| Qwen/Qwen3.5-35B-A3B (HF/DeepInfra) | $0.14 / $1.00 | ~$0.00008986 | ~$0.00003817 | ~335.5 (285.7+49.9) | ~205.1 (194.1+11.0) |
+| Qwen/Qwen3-30B-A3B-Thinking-2507 (HF proxy) [2] | $0.12 / $0.50 | ~$0.00006420 | ~$0.00002877 | ~344.2 (283.9+60.3) | ~204.9 (193.9+11.0) |
+| meta-llama/Llama-3.1-8B (HF proxy) [1] | $0.02 / $0.05 | ~$0.00000872 | ~$0.00000445 | ~343.5 (281.9+61.6) | ~205.9 (194.9+11.0) |
+
+
+TABLE 2 — MMMU-Pro
+
+| Model | Unit price: input/output (USD/1M tokens) | Answer cost/question | Cost/question as verifier | Avg. answer tokens/question (I+O) | Avg. verifier tokens/question (I+O) |
+|---|---:|---:|---:|---:|---:|
+| gpt-5.5 | $5.00 / $30.00 | $0.00627658 | $0.00455954 | 942.6 (880.0+62.5) | 816.9 (797.9+19.0) |
+| gpt-5.4-mini | $0.75 / $4.50 | $0.00094220 | $0.00070144 | 942.7 (880.0+62.7) | 820.8 (797.9+22.9) |
+| gpt-5.4-nano | $0.20 / $1.25 | $0.00026199 | $0.00018362 | 948.8 (880.0+68.8) | 817.1 (797.9+19.2) |
+| Claude Sonnet 5 | $2.00 / $10.00 | $0.00309519 | $0.00249291 | 1,139.0 (1,036.9+102.1) | 1,168.8 (1,149.3+19.4) |
+| Claude Haiku 4.5 | $1.00 / $5.00 | $0.00135080 | $0.00099870 | 972.9 (878.4+94.5) | 938.6 (923.6+15.0) |
+| Qwen/Qwen3.5-35B-A3B (HF/DeepInfra) | $0.14 / $1.00 | $0.00018090 | $0.00010376 | 752.9 (665.1+87.8) | 624.1 (605.1+19.0) |
+| Qwen/Qwen3-VL-30B-A3B-Instruct (HF/DeepInfra) | $0.15 / $0.60 | $0.00015992 | $0.00010568 | 797.1 (707.5+89.7) | 663.9 (650.4+13.5) |
+| meta-llama/Llama-4-Scout-17B-16E-Instruct (HF/DeepInfra) | $0.10 / $0.30 | $0.00014128 | $0.00012120 | 1,289.0 (1,227.1+61.9) | 1,186.0 (1,173.0+13.0) |
+
+Open-weight model pricing notes
+[1] The experiment used the `meta-llama/Llama-3.1-8B` base checkpoint. Hugging Face Inference Providers does not currently list the exact base endpoint, so the lowest listed price for the same-size Llama-3.1-8B-Instruct model ($0.02/$0.05) is used as a proxy.
+[2] Hugging Face Inference Providers does not currently list the exact `Qwen3-30B-A3B-Thinking-2507` endpoint. The DeepInfra price for Qwen3-30B-A3B ($0.12/$0.50) listed by Hugging Face is used as a proxy. This row has greater uncertainty than the others.
+- Qwen3.5-35B-A3B, Qwen3-VL-30B-A3B-Instruct, and Llama-4-Scout use the DeepInfra prices that match the provider recorded in the experiment's raw usage, rather than prices from other providers on the Hugging Face page.
+
+Pricing and documentation sources
+- OpenAI GPT-5.5: https://developers.openai.com/api/docs/models/gpt-5.5
+- OpenAI GPT-5.4 Mini: https://developers.openai.com/api/docs/models/gpt-5.4-mini
+- OpenAI GPT-5.4 nano: https://developers.openai.com/api/docs/models/gpt-5.4-nano
+- Anthropic Claude pricing: https://platform.claude.com/docs/en/about-claude/pricing
+- Anthropic Sonnet 5 (adaptive thinking enabled by default): https://platform.claude.com/docs/en/docs/about-claude/models/whats-new-sonnet-5
+- Anthropic usage and thinking-token definitions: https://platform.claude.com/docs/en/api/typescript/messages
+- OpenAI Responses usage and reasoning-token definitions: https://platform.openai.com/docs/api-reference/responses
+- Hugging Face Inference Providers pricing table: https://huggingface.co/inference/models
+- Hugging Face Qwen3-30B-A3B-Thinking-2507 model page: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
+
+Reproducible local data sources
+- MMLU_pro/selected_outputs/*.csv
+- MMLU_pro/verifier_output/progress/*.csv
+- MMLU_pro/prompt.txt
+- MMLU_pro/verifier_output/judge_prompt.txt
+- MMLU_pro/probe_reasoning_tokens.py
+- MMMU_pro/outputs/raw/*.jsonl
+- MMMU_pro/verifier_output/raw/*.jsonl
+- MMMU_pro/selected_outputs/*.csv
+- MMMU_pro/verifier_output/progress/*.csv
