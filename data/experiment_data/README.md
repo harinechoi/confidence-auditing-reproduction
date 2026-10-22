@@ -1,7 +1,6 @@
 # Experiment data
 
-Final prompts and run outputs from the two benchmarks. Original working copies stay in `MMLU_pro/` and `MMMU_pro/`. This folder keeps only the files needed to read the experiments.
-
+This directory contains the prompts, selected model outputs, cross-model verifier judgments, subset metadata, and derived evaluation summaries released with the paper.
 ```
 experiment data/
   README.md
@@ -35,4 +34,4 @@ Not copied: API tokens, logs, PIDs, raw API dumps, image files, scripts, incompl
 - Sonnet is missing answers for `test_Biology_318` and `test_Agriculture_282`. See `sample/validation.json`.
 - `verifier_outputs/metrics.json` has reference-label accuracy and per-pair judgment summaries.
 
-Images remain in `MMMU_pro/data/images/` and are not duplicated here.
+Original MMMU-Pro images are not included in this repository. They should be obtained from the official benchmark distribution in accordance with its license and terms.

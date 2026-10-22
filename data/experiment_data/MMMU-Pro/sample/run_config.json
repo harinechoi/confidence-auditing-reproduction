@@ -32,11 +32,10 @@
       "provider": "huggingface",
       "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct:deepinfra"
     }
-  },
+    },
   "concurrency_per_model": 12,
-  "sample_manifest": "../data/manifest.json",
-  "images": "Original PNG with ordered labeled attachments. Oversize Anthropic/HF inputs use documented PNG derivatives; see data/transport_manifest.json",
-  "generation_prompt": "../prompt.txt",
-  "settings": "Exact request settings recorded for every raw response",
-  "reference": "../../MMLU_pro/run_benchmark.py"
+  "sample_manifest": "manifest.json",
+  "images": "Original MMMU-Pro images are not included. Generation used ordered labeled image attachments obtained from the official benchmark distribution.",
+  "generation_prompt": "../prompts/generation.txt",
+  "settings": "See Appendix B.1 of the accompanying paper for the documented inference and parsing settings."
 }
